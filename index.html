@@ -46,6 +46,7 @@
         
         .logo {
             font-size: 36px;
+            transition: .5s;
         }
         
         .logo:hover,
@@ -56,6 +57,7 @@
         .links {
             font-size: 20px;
             margin-left: 32px;
+            transition: .5s;
         }
         
         .hero-img {
@@ -120,6 +122,15 @@
             color: white;
             font-size: 32px;
             margin: 50px auto 0;
+            transform: translateY(0);
+            transition: .5s;
+        }
+        
+        .book-link-card .book-link-btn:hover {
+            transform: translateY(-20px);
+            box-shadow: 0 25px 45px #50505050;
+            background: rgba(255, 255, 255, 0.2);
+            font-size: 36px;
         }
         
         .about {
@@ -568,8 +579,8 @@
                 <a href="#" class="links">Villas</a>
                 <a href="#" class="links">Experiences</a>
                 <a href="#book" class="links">Book</a>
-                <a href="#" class="links">Location</a>
-                <a href="#" class="links">Reviews</a>
+                <a href="#location" class="links">Location</a>
+                <a href="#reviews" class="links">Reviews</a>
             </nav>
         </div>
     </header>
@@ -581,7 +592,9 @@
             <div class="book-link-card">
                 <h2>Keemala</h2>
                 <h5>Experience a Tropical Wonderland</h5>
-                <div class="book-link-btn">Book</div>
+                <a href="#book">
+                    <div class="book-link-btn">Book</div>
+                </a>
             </div>
         </div>
     </section>
@@ -1101,6 +1114,7 @@
             </div>
         </div>
     </section>
+    <div id="location"></div>
     <section class="location">
         <div class="container">
             <h2>Location</h2>
@@ -1128,7 +1142,7 @@
         </div>
 
     </section>
-    <section class="reviews">
+    <section class="reviews" id="reviews">
         <div class="container">
             <h2>Reviews</h2>
             <div class="review-content">
