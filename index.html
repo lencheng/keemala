@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keemala</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: myanmar mn;
+            text-decoration: none;
+            color: #505050;
+        }
+        
+        .container {
+            position: relative;
+            width: 1080px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            position: fixed;
+            width: 80%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 10%;
+            z-index: 1000;
+        }
+        
+        .header a {
+            color: white;
+        }
+        
+        .logo {
+            font-size: 36px;
+        }
+        
+        .links {
+            font-size: 20px;
+            margin-left: 32px;
+        }
+        
+        .hero-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+        }
+        
+        .hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .book-link-card {
+            position: absolute;
+            right: -100px;
+            top: 200px;
+            width: 480px;
+            height: 600px;
+            background: rgba(255, 255, 255, 0.1);
+            block-size: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(25px);
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .book-link-card h2 {
+            font-size: 72px;
+            font-weight: 400;
+            color: white;
+            align-items: center;
+            margin: 150px 0 0;
+        }
+        
+        .book-link-card h5 {
+            font-size: 26px;
+            font-weight: 300;
+            color: white;
+            margin: -20px 0 0;
+        }
+        
+        .book-link-card .book-link-btn {
+            width: 360px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.1);
+            block-size: 0 25px 45px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(25px);
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 32px;
+            margin: 50px auto 0;
+        }
+        
+        .about {
+            position: absolute;
+            width: 100%;
+            top: calc(100vh + 200px);
+        }
+        
+        .about h2 {
+            font-size: 60px;
+            font-weight: 300;
+            text-align: center;
+        }
+        
+        .about .about-text {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <a href="#" class="logo">Keemala</a>
+        <nav>
+            <a href="#" class="links">About</a>
+            <a href="#" class="links">Villas</a>
+            <a href="#" class="links">Experiences</a>
+            <a href="#" class="links">Book</a>
+            <a href="#" class="links">Location</a>
+            <a href="#" class="links">Reviews</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-img">
+            <img src="./img/hero/hero.png" alt="">
+        </div>
+        <div class="container">
+            <div class="book-link-card">
+                <h2>Keemala</h2>
+                <h5>Experience a Tropical Wonderland</h5>
+                <div class="book-link-btn">Book</div>
+            </div>
+        </div>
+    </section>
+    <section class="about">
+        <div class="container">
+            <h2>About</h2>
+            <div class="about-text">
+                <p>You are invited to experience an all pool villa wonderland set in the rainforest of Kamala, Phuket. Keemala embraces a Thai cultural philosophy and brings it to life through distinctive design and guests experiences. The spa treatments,
+                    holistic programs, gastronomic choices, activities and magical villas and cottages all promise to be beyond enchanting.</p>
+            </div>
+            <div class="about-img">
+                <div class="about-img-1">
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
