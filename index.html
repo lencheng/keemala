@@ -126,7 +126,8 @@
         .villas h2,
         .experiences h2,
         .book h2,
-        .location h2 {
+        .location h2,
+        .reviews h2 {
             font-size: 60px;
             font-weight: 300;
             text-align: center;
@@ -177,7 +178,8 @@
         .villas,
         .experiences,
         .book,
-        .location {
+        .location,
+        .reviews {
             margin-top: 200px;
         }
         
@@ -400,8 +402,9 @@
         }
         
         .location-info {
-            margin-top: 80px;
+            margin: 80px auto 0;
             display: flex;
+            justify-content: space-between;
         }
         
         .location-left {
@@ -415,9 +418,56 @@
         }
         
         .location-right {
-            width: 400px;
-            margin-left: 40px;
-            margin: auto;
+            width: 350px;
+            margin: auto 0 auto 40px;
+        }
+        
+        .review-content {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        .review-box {
+            display: flex;
+            width: 480px;
+            margin: 80px 25px 0;
+        }
+        
+        .review-img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .review-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 25px 45px #50505050;
+        }
+        
+        .review-text {
+            margin-left: 20px;
+            width: 360px;
+        }
+        
+        .review-text h3 {
+            font-size: 24px;
+            line-height: 24px;
+            font-weight: 500;
+        }
+        
+        .review-text small {
+            font-size: 12px;
+            color: #50505075;
+        }
+        
+        .review-text h5 {
+            margin-top: 16px;
+            font-size: 16px;
+            font-weight: 500;
         }
     </style>
 </head>
@@ -990,6 +1040,63 @@
 
         </div>
 
+    </section>
+    <section class="reviews">
+        <div class="container">
+            <h2>Reviews</h2>
+            <div class="review-content">
+                <div class="review-box">
+                    <div class="review-img">
+                        <img src="./img/reviews/reviews-1.jpg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <h3>Amazing place</h3>
+                        <small>Anamwais, Romania - October 2018</small>
+                        <h5>Everything was perfect, it was amazing</h5>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="review-img">
+                        <img src="./img/reviews/reviews-2.jpg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <h3>Definitely coming back here !</h3>
+                        <small>Lawson, India - April 2019</small>
+                        <h5>The rooms were unreal , one of the best tropical properties I’ve stayed in. The bathrooms were top notch.</h5>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="review-img">
+                        <img src="./img/reviews/reviews-3.jpg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <h3>Overall was a great experience we would love to extend but wasn't possible as I mentioned.</h3>
+                        <small>Raul, United States - April 2019</small>
+                        <h5>We have a great interaction with the evening chef recommending a great combination of dishes and side dishes we taste and love.</h5>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="review-img">
+                        <img src="./img/reviews/reviews-4.jpg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <h3>Gorgeous place, magnificent villas</h3>
+                        <small>Konrad, Poland - April 2019</small>
+                        <h5>Customer service - perfect</h5>
+                    </div>
+                </div>
+                <div class="review-box">
+                    <div class="review-img">
+                        <img src="./img/reviews/reviews-5.jpg" alt="">
+                    </div>
+                    <div class="review-text">
+                        <h3>Fabulous</h3>
+                        <small>Fatima, United Arab Emirates - April 2019</small>
+                        <h5>Lovely moment it's amazing</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 
