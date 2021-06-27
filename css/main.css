@@ -291,7 +291,7 @@ section {
 
 .villas_card {
     position: relative;
-    width: 240px;
+    width: 200px;
     height: 300px;
     border-radius: 10px;
     box-shadow: 0 25px 45px var(--shadow-color);
@@ -299,6 +299,8 @@ section {
 }
 
 .villas_img {
+    width: 200px;
+    height: 300px;
     border-radius: 10px;
     transition: .5s;
 }
@@ -308,9 +310,15 @@ section {
 }
 
 .villas_text {
+    font-size: var(--normal-font-size);
     position: absolute;
     bottom: var(--mb-1);
     left: var(--mb-1);
     color: var(--white-color);
     font-weight: normal;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right {
+    background-image: none;
 }
