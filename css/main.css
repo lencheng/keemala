@@ -42,6 +42,7 @@
 
 h1 {
     font-size: var(--h1-font-size);
+    font-weight: normal;
 }
 
 h2 {
@@ -51,6 +52,7 @@ h2 {
 
 h3 {
     font-size: var(--h3-font-size);
+    font-weight: normal;
 }
 
 h6 {
@@ -88,6 +90,7 @@ img {
 
 section {
     margin-bottom: var(--mb-section);
+    padding: var(--header-height) 0 var(--mb-line);
 }
 
 .section__title {
@@ -96,9 +99,9 @@ section {
 }
 
 @media screen and (max-width: 375px) {
-    section {
+    /* section {
         margin-bottom: var(--mb-title);
-    }
+    } */
     .section__title {
         margin-bottom: var(--mb-line);
     }
@@ -227,7 +230,6 @@ section {
 .home_container h3,
 .home_container a {
     color: var(--white-color);
-    font-weight: normal;
 }
 
 .home_container h1 {
@@ -294,7 +296,6 @@ section {
     width: 200px;
     height: 300px;
     border-radius: 10px;
-    box-shadow: 0 25px 45px var(--shadow-color);
     overflow: hidden;
 }
 
@@ -321,4 +322,44 @@ section {
 .swiper-container-3d .swiper-slide-shadow-left,
 .swiper-container-3d .swiper-slide-shadow-right {
     background-image: none;
+}
+
+
+/* experiences */
+
+.spa_img img {
+    margin: var(--mb-line) 0;
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 25px 45px var(--shadow-color);
+    border-radius: 10px;
+}
+
+.experiences h3 {
+    margin: var(--mb-line) 0;
+}
+
+.food_img {
+    margin: var(--mb-line) 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food_img_box {
+    margin: var(--mb-line) 11.25px;
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0 25px 45px var(--shadow-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.food_img_box img {
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.food_img_box img:hover {
+    transform: var(--img-scale);
 }
