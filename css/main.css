@@ -18,9 +18,14 @@
     --small-font-size: 12px;
     /* mb */
     --mb-section: 200px;
+    --mb-title: 100px;
     --mb-box: 80px;
     --mb-line: 20px;
+    --mb-1: 15px;
 }
+
+
+/* set */
 
 * {
     margin: 0;
@@ -66,4 +71,41 @@ img {
 
 section {
     margin-bottom: var(--mb-section);
+}
+
+.section__title {
+    margin-bottom: var(--mb-title);
+}
+
+.container {
+    max-width: 1080px;
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+/* header */
+
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background: var(--background-color);
+}
+
+
+/* nav */
+
+.nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
