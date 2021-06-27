@@ -62,7 +62,10 @@ h6 {
 @media screen and (max-width: 375px) {
     h2 {
         font-size: 36px;
-        font-weight: normal;
+    }
+    h3 {
+        font-size: 20px;
+        margin: var(--mb-line) 0;
     }
     p {
         font-size: var(--normal-font-size);
@@ -335,10 +338,6 @@ section {
     border-radius: 10px;
 }
 
-.experiences h3 {
-    margin: var(--mb-line) 0;
-}
-
 .food_img {
     margin: var(--mb-line) 0;
     display: flex;
@@ -362,4 +361,29 @@ section {
 
 .food_img_box img:hover {
     transform: var(--img-scale);
+}
+
+
+/* book */
+
+.book_name {
+    width: 320px;
+    margin: 0 auto;
+}
+
+.book .swiper-slide img {
+    display: block;
+    width: 320px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.book .swiper-container {
+    width: 320px;
+    height: 200px;
+}
+
+.book .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--white-color);
 }

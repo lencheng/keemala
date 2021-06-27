@@ -43,3 +43,20 @@ let swiper = new Swiper(".villas_container", {
         rotate: 0,
     },
 });
+
+var swiper2 = new Swiper(".book_img", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
