@@ -285,3 +285,32 @@ section {
 .about_img_3:hover {
     transform: var(--img-scale);
 }
+
+
+/* villas */
+
+.villas_card {
+    position: relative;
+    width: 240px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 25px 45px var(--shadow-color);
+    overflow: hidden;
+}
+
+.villas_img {
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.villas_img:hover {
+    transform: var(--img-scale);
+}
+
+.villas_text {
+    position: absolute;
+    bottom: var(--mb-1);
+    left: var(--mb-1);
+    color: var(--white-color);
+    font-weight: normal;
+}
