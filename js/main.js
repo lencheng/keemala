@@ -60,3 +60,15 @@ var swiper2 = new Swiper(".book_img", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+let swiper3 = new Swiper(".reviews_ins", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    loop: true,
+    spaceBetween: 32,
+    coverflowEffect: {
+        rotate: 0,
+    },
+});
