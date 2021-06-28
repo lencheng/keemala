@@ -361,30 +361,44 @@ section {
 
 /* about */
 
-.about_img {
-    display: flex;
-    column-gap: var(--mb-1);
-    justify-content: space-between;
-    align-items: center;
+.about_text {
+    width: 80%;
+    margin: var(--mb-line) auto;
 }
 
-.about_img_box {
-    width: 100px;
-    height: 100px;
+.about .swiper-slide img {
+    /* display: block; */
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+}
+
+.about .swiper-container {
+    width: 600px;
+    height: 400px;
     border-radius: 10px;
-    overflow: hidden;
 }
 
-.about_img_1,
-.about_img_2,
-.about_img_3 {
-    transition: .5s;
+.about .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: var(--white-color);
 }
 
-.about_img_1:hover,
-.about_img_2:hover,
-.about_img_3:hover {
-    transform: var(--img-scale);
+@media screen and (max-width: 375px) {
+    .about_text {
+        width: 320px;
+        margin: var(--mb-line) auto;
+    }
+    .about .swiper-slide img {
+        display: block;
+        width: 320px;
+        height: 200px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    .about .swiper-container {
+        width: 320px;
+        height: 200px;
+    }
 }
 
 

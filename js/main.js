@@ -74,6 +74,23 @@ let swiper3 = new Swiper(".reviews_ins", {
     },
 });
 
+var swiper4 = new Swiper(".about_img", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
 
