@@ -20,7 +20,7 @@
     /* small */
     --small-font-size: 12px;
     /* mb */
-    --mb-section: 200px;
+    --mb-section: 100px;
     --mb-title: 100px;
     --mb-box: 80px;
     --mb-line: 20px;
@@ -611,6 +611,10 @@ iframe {
 
 /* reviews */
 
+.reviews {
+    margin-bottom: 0;
+}
+
 .reviews_content {
     display: flex;
     flex-wrap: wrap;
@@ -663,6 +667,9 @@ iframe {
     }
     .reviews_box {
         width: 100%;
+    }
+    .reviews {
+        margin-bottom: 0;
     }
 }
 
@@ -745,12 +752,14 @@ iframe {
 @media screen and (max-width: 375px) {
     .reviews_ins {
         width: 100%;
+        margin: 0 auto;
     }
     .reviews_ins_card {
         position: relative;
         width: 240px;
         height: 240px;
         border-radius: 10px;
+        margin: 0;
     }
     .reviews_ins_img {
         width: 240px;
@@ -775,4 +784,42 @@ iframe {
     width: 120px;
     display: flex;
     justify-content: space-between;
+}
+
+
+/* scrollup */
+
+.scrollup {
+    position: fixed;
+    border-radius: 10px;
+    right: var(--mb-box);
+    bottom: -20%;
+    background-color: var(--main-color);
+    padding: .5rem;
+    display: flex;
+    opacity: .5;
+    z-index: 1000;
+    transition: .5s;
+}
+
+.scrollup:hover {
+    opacity: .3;
+}
+
+.scrollup__icon {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+
+/* Show scroll */
+
+.show-scroll {
+    bottom: var(--mb-box);
+}
+
+@media screen and (max-width: 375px) {
+    .scrollup {
+        right: var(--mb-1);
+    }
 }
