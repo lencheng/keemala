@@ -120,11 +120,7 @@ const sr = ScrollReveal({
     // reset: true,
 })
 
-
-sr.reveal(`.section__title, .book-card, .about_text, .about_img, .spa_text, .spa_img, .food_text, .food_img_box, .book_card, iframe, .location_icon_box, .reviews_title, .reviews_box, .reviews_number, .reviews_awards_box, .villas_container, .reviews_ins, .footer_icon_box, .ff`, {
+sr.reveal(`.section__title, .book-card, .about_text, .about_img, .spa_text, .spa_img, .food_text, .food_img_box, .book_card, iframe, .location_icon_box, .reviews_title, .reviews_box, .reviews_number, .reviews_awards_box, .villas_container, .reviews_ins, .footer_icon_box, .ff, .nav_logo, .nav_item, .nav__dark, .villas_info`, {
     origin: 'bottom',
     interval: 100,
-})
-sr.reveal(``, {
-    origin: 'left',
 })

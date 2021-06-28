@@ -390,12 +390,17 @@ section {
 
 /* villas */
 
+.villas_info {
+    text-align: center;
+}
+
 .villas_card {
     position: relative;
     width: 400px;
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
+    margin-top: 40px;
 }
 
 .villas_img {
@@ -419,6 +424,9 @@ section {
 }
 
 @media screen and (max-width: 375px) {
+    .villas_info {
+        text-align: left;
+    }
     .villas_card {
         position: relative;
         width: 200px;
