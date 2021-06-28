@@ -42,6 +42,7 @@ let swiper = new Swiper(".villas_container", {
     coverflowEffect: {
         rotate: 0,
     },
+
 });
 
 var swiper2 = new Swiper(".book_img", {
