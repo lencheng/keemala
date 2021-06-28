@@ -3,6 +3,7 @@
     /* color */
     --main-color: #505050;
     --hover-color: #50505075;
+    --dark-color: #202020;
     --white-color: #fff;
     --shadow-color: #50505010;
     /* blur color */
@@ -38,6 +39,10 @@
     box-sizing: border-box;
     font-family: var(--body-font);
     color: var(--main-color);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -100,11 +105,11 @@ i {
 
 section {
     margin-bottom: var(--mb-section);
-    padding: var(--header-height) 0 var(--mb-line);
+    padding: 100px 0;
 }
 
 .section__title {
-    margin-bottom: var(--mb-title);
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -219,6 +224,22 @@ section {
 
 .show-menu {
     right: 0;
+}
+
+.active-link {
+    position: relative;
+    color: var(--dark-color);
+    font-weight: 900;
+}
+
+.active-link::before {
+    content: '';
+    position: absolute;
+    background-color: var(--dark-color);
+    width: 100%;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
 }
 
 
