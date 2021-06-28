@@ -91,8 +91,8 @@ img {
     object-fit: cover;
 }
 
-.icon img {
-    object-fit: contain;
+i {
+    font-size: var(--h6-font-size);
 }
 
 section {
@@ -109,6 +109,9 @@ section {
     /* section {
         margin-bottom: var(--mb-title);
     } */
+    i {
+        font-size: 16px;
+    }
     .section__title {
         margin-bottom: var(--mb-line);
     }
@@ -370,8 +373,15 @@ section {
 
 /* book */
 
+.book_card {
+    box-shadow: 0 25px 45px var(--shadow-color);
+    border-radius: 10px;
+    margin: var(--mb-line) 0;
+}
+
 .book_name,
-.book_icon {
+.book_icon,
+.book_now {
     width: 320px;
     margin: 0 auto;
 }
@@ -393,12 +403,64 @@ section {
     background: var(--white-color);
 }
 
-.book_icon_box {
+.book_icon_box,
+.location_icon_box {
     margin: var(--mb-1) 0;
     display: flex;
     align-items: center;
 }
 
-.book_icon_box h6 {
+.book_icon_box h6,
+.location_icon_box h6 {
     margin-left: var(--mb-1);
+}
+
+.icon_men {
+    width: 8px;
+}
+
+.icon_child i {
+    font-size: 12px;
+}
+
+.book_now {
+    display: flex;
+    justify-content: space-between;
+}
+
+.book_now h3 {
+    font-size: var(--h3-font-size);
+    color: #AC3D3D;
+}
+
+.book_price {
+    margin-right: var(--mb-1);
+}
+
+.book_btn {
+    width: 100%;
+    font-size: var(--h3-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--mb-1);
+    padding: var(--mb-1);
+    box-shadow: 0 25px 45px var(--shadow-color);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.book_btn:hover {
+    font-size: 30px;
+}
+
+
+/* location */
+
+iframe {
+    width: 100%;
+    height: 400px;
+    margin: var(--mb-line) auto;
+    box-shadow: 0 25px 45px var(--shadow-color);
+    border-radius: 10px;
 }
