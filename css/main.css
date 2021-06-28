@@ -313,17 +313,30 @@ section {
 
 .villas_card {
     position: relative;
-    width: 500px;
+    width: 400px;
     height: 400px;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .villas_img {
-    width: 500px;
+    width: 400px;
     height: 400px;
     border-radius: 10px;
     transition: .5s;
+}
+
+.villas_img:hover {
+    transform: var(--img-scale);
+}
+
+.villas_text {
+    font-size: var(--h3-font-size);
+    position: absolute;
+    bottom: var(--mb-1);
+    left: var(--mb-1);
+    color: var(--white-color);
+    font-weight: normal;
 }
 
 @media screen and (max-width: 375px) {
@@ -340,19 +353,9 @@ section {
         border-radius: 10px;
         transition: .5s;
     }
-}
-
-.villas_img:hover {
-    transform: var(--img-scale);
-}
-
-.villas_text {
-    font-size: var(--normal-font-size);
-    position: absolute;
-    bottom: var(--mb-1);
-    left: var(--mb-1);
-    color: var(--white-color);
-    font-weight: normal;
+    .villas_text {
+        font-size: var(--normal-font-size);
+    }
 }
 
 .swiper-container-3d .swiper-slide-shadow-left,
@@ -608,9 +611,22 @@ iframe {
 
 /* reviews */
 
-.reviews_box {
+.reviews_content {
     display: flex;
-    margin: 40px 0;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.reviews_title {
+    width: 100%;
+}
+
+.reviews_box {
+    width: 45%;
+    display: flex;
+    margin: var(--mb-line) 0;
 }
 
 .reviews_img img {
@@ -641,9 +657,19 @@ iframe {
     font-size: var(--small-font-size);
 }
 
+@media screen and (max-width: 375px) {
+    .reviews_content {
+        width: 100%;
+    }
+    .reviews_box {
+        width: 100%;
+    }
+}
+
 .reviews_number {
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 
 .reviews_number_img {
@@ -663,20 +689,33 @@ iframe {
 }
 
 .reviews_awards {
-    width: 100%;
+    width: 80%;
     margin: var(--mb-line) auto;
 }
 
 .reviews_awards_box {
-    width: 300px;
+    width: 80%;
     display: flex;
     margin: var(--mb-line) auto;
     justify-content: space-between;
 }
 
 .reviews_awards_img {
-    width: 80px;
-    height: 60px;
+    width: 160px;
+    height: 120px;
+}
+
+@media screen and (max-width: 375px) {
+    .reviews_awards {
+        width: 100%;
+    }
+    .reviews_awards_box {
+        width: 300px;
+    }
+    .reviews_awards_img {
+        width: 80px;
+        height: 60px;
+    }
 }
 
 .reviews_awards_img img {
@@ -684,21 +723,41 @@ iframe {
 }
 
 .reviews_ins {
-    width: 345px;
+    width: 80%;
+    margin: var(--mb-box) auto;
 }
 
 .reviews_ins_card {
     position: relative;
-    width: 240px;
-    height: 240px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
+    margin: var(--mb-line) 0;
 }
 
 .reviews_ins_img {
-    width: 240px;
-    height: 240px;
+    width: 400px;
+    height: 400px;
     border-radius: 10px;
     transition: .5s;
+}
+
+@media screen and (max-width: 375px) {
+    .reviews_ins {
+        width: 100%;
+    }
+    .reviews_ins_card {
+        position: relative;
+        width: 240px;
+        height: 240px;
+        border-radius: 10px;
+    }
+    .reviews_ins_img {
+        width: 240px;
+        height: 240px;
+        border-radius: 10px;
+        transition: .5s;
+    }
 }
 
 
@@ -717,5 +776,3 @@ iframe {
     display: flex;
     justify-content: space-between;
 }
-
-.footer small {}
