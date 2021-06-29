@@ -34,7 +34,7 @@ body.dark-theme {
     --white-color: #fff;
     --shadow-color: #00000025;
     --body-color: rgb(120, 129, 125);
-    --price-color: #d8b28f;
+    --price-color: #e2b386;
 }
 
 .nav__dark {
@@ -69,6 +69,7 @@ body.dark-theme {
     box-sizing: border-box;
     font-family: var(--body-font);
     color: var(--main-color);
+    transition: .5s;
 }
 
 html {
@@ -202,6 +203,7 @@ section {
 
 .scroll-header.hide {
     transform: translateY(-60px);
+    box-shadow: none;
 }
 
 .scroll-header .nav_logo,
@@ -600,11 +602,25 @@ section {
 }
 
 .icon_men {
-    width: 8px;
+    width: 12px;
+}
+
+.icon_child {
+    width: 12px;
 }
 
 .icon_child i {
+    margin-top: auto;
     font-size: 12px;
+}
+
+@media screen and (max-width: 375px) {
+    .icon_men {
+        width: 10px;
+    }
+    .icon_child i {
+        font-size: 12px;
+    }
 }
 
 .book_now {
