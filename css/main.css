@@ -353,13 +353,11 @@ section {
     color: var(--main-color);
     background: var(--body-color);
     border-radius: 10px;
-    transform: translateY(0);
     transition: .5s;
 }
 
 .home_container a:hover {
     background: var(--hover-color);
-    transform: translateY(-20px);
 }
 
 
