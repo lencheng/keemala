@@ -197,6 +197,11 @@ section {
 .scroll-header {
     background-color: var(--body-color);
     box-shadow: 0 25px 45px var(--shadow-color);
+    transition: .5s;
+}
+
+.scroll-header.hide {
+    transform: translateY(-60px);
 }
 
 .scroll-header .nav_logo,

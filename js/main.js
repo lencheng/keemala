@@ -143,7 +143,7 @@ sr.reveal(`.section__title, .book-card, .about_text, .about_img, .spa_text, .spa
 })
 
 $(window).scroll(function() {
-    if ($(window).scrollTop() > $(window).height()) {
+    if ($(window).scrollTop() > 60) {
         $('.nav_item')
             .css('opacity', '1')
             .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
@@ -155,3 +155,18 @@ $(window).scroll(function() {
             .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
     }
 })
+
+let lastScroll = 0;
+
+$(window).scroll(function() {
+    const nowScroll = $(window).scrollTop();
+
+    // 1. 判斷使用者向下或向上
+    if (lastScroll < nowScroll) {
+        $('.scroll-header').addClass('hide');
+    } else {
+        $('.scroll-header').removeClass('hide');
+    }
+    // 2. 更新 lastScroll
+    lastScroll = nowScroll;
+});
