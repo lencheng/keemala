@@ -133,11 +133,11 @@ themeButton.addEventListener('click', () => {
 
 const sr = ScrollReveal({
     distance: '40px',
-    duration: 2800,
+    duration: 3000,
     // reset: true,
 })
 
-sr.reveal(`.section__title, .book-card, .about_text, .about_img, .spa_text, .spa_img, .food_text, .food_img_box, .book_card, iframe, .location_icon_box, .reviews_title, .reviews_box, .reviews_number, .reviews_awards_box, .villas_container, .reviews_ins, .footer_icon_box, .ff, .nav_logo, .nav_item, .nav__dark, .villas_info`, {
+sr.reveal(`.section__title, .book-card, .about_text, .about_img, .spa_text, .spa_img, .food_text, .food_img_box, .book_card, iframe, .location_icon_box, .reviews_title, .reviews_box, .reviews_number, .reviews_awards_box, .villas_container, .reviews_ins, .footer_icon_box, .ff, .nav_logo, .nav_item, .nav__dark, .villas_info, .scroll-header`, {
     origin: 'bottom',
     interval: 100,
 })
@@ -167,6 +167,20 @@ $(window).scroll(function() {
     } else {
         $('.scroll-header').removeClass('hide');
     }
+    // console.log(nowScroll, lastScroll);
     // 2. 更新 lastScroll
     lastScroll = nowScroll;
 });
+
+function myOverFunction() {
+    $('.scroll-header').removeClass('hide');
+    $('.nav_item')
+        .css('opacity', '1')
+        .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
+    $('.nav_logo')
+        .css('opacity', '1')
+        .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
+    $('.nav__dark')
+        .css('opacity', '1')
+        .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
+}
