@@ -2,16 +2,12 @@
     --header-height: 60px;
     /* color */
     --main-color: #505050;
-    --hover-color: #c5c5c5;
+    --hover-color: #c3c3c3;
     --dark-color: #202020;
     --white-color: #fff;
-    --shadow-color: #50505010;
-    /* blur color */
-    --background-color: #ffffff10;
-    --border-color: #ffffff50;
-    --border-side-color: #ffffff20;
-    --border-hover-color: #ffffff75;
+    --shadow-color: #50505020;
     --body-color: #fff;
+    --price-color: #ED5C59;
     /* font */
     --body-font: myanmar mn, sans-serif;
     --h1-font-size: 72px;
@@ -38,6 +34,7 @@ body.dark-theme {
     --white-color: #fff;
     --shadow-color: #00000025;
     --body-color: rgb(120, 129, 125);
+    --price-color: #d8b28f;
 }
 
 .nav__dark {
@@ -613,7 +610,7 @@ section {
 
 .book_now h3 {
     font-size: var(--h3-font-size);
-    color: #AC3D3D;
+    color: var(--price-color);
 }
 
 .book_price {
@@ -640,9 +637,6 @@ section {
 }
 
 @media screen and (max-width: 375px) {
-    .book_container {
-        /* display: block; */
-    }
     .book_card {
         width: 345px;
         margin: var(--mb-line) auto;

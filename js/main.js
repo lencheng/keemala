@@ -141,3 +141,17 @@ sr.reveal(`.section__title, .book-card, .about_text, .about_img, .spa_text, .spa
     origin: 'bottom',
     interval: 100,
 })
+
+$(window).scroll(function() {
+    if ($(window).scrollTop() > $(window).height()) {
+        $('.nav_item')
+            .css('opacity', '1')
+            .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
+        $('.nav_logo')
+            .css('opacity', '1')
+            .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
+        $('.nav__dark')
+            .css('opacity', '1')
+            .css('transform', 'matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)')
+    }
+})
