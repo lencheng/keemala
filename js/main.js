@@ -15,6 +15,7 @@ if (navClose) {
 }
 
 const navLink = document.querySelectorAll('.nav_link')
+const navDark = document.querySelectorAll('.change-theme')
 
 function linkAction() {
     const navMenu = document.getElementById('nav-menu')
@@ -22,6 +23,11 @@ function linkAction() {
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+
+
+navDark.forEach(n => n.addEventListener('click', linkAction))
+
 
 function scrollHeader() {
     const header = document.getElementById('header')
